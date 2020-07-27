@@ -5,7 +5,7 @@ import {AffairType} from "./HW2";
 type AffairsPropsType = { // need to fix any
     data: any
     setFilter: any
-    deleteAffairsCallback: any
+    deleteAffairCallback: any
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -13,7 +13,7 @@ function Affairs(props: AffairsPropsType) {
         <Affair // should work
             key={a._id} // кеи ОБЯЗАТЕЛЬНЫ в 99% - так что лучше их писать всегда при создании компонент в мапе
             affair={a}
-            deleteAffairsCallback={props.deleteAffairsCallback}
+            deleteAffairCallback={props.deleteAffairCallback}
         />
     ))
 
