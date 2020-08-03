@@ -3,7 +3,7 @@ import GreetingContainer from "./GreetingContainer";
 
 // types
 export type UserType = {
-    id: any // need to fix any
+    _id: any // need to fix any
     name: any // need to fix any
 }
 
