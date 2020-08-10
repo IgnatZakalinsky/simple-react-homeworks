@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import SuperInputText from "./common/SuperInputText/SuperInputText";
 import s from "./HW4.module.css";
+import SuperButton from "./common/SuperButton/SuperButton";
 
 function HW4() {
     const [text, setText] = useState<string>("");
@@ -27,7 +28,12 @@ function HW4() {
                 // className={s.blue} // проверьте, рабоет ли смешивание классов
             />
             {/*should work (должно работать)*/}
-
+            <SuperButton
+                red // пропсу с булевым значением не обязательно указывать true
+                onClick={showAlert}
+            >
+                delete {/*// название кнопки попадёт в children*/}
+            </SuperButton>
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
