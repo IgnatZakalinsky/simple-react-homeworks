@@ -8,9 +8,6 @@ export const PATH = {
 function Routes() {
     return (
         <div>
-            {/*в gh-pages лучше работает HashRouter*/}
-            {/*<HashRouter>*/}
-
             {/*Switch выбирает первый подходящий роут*/}
             {/*<Switch>*/}
 
@@ -25,7 +22,6 @@ function Routes() {
             {/*<Route render={() => <Error404/>}/>*/}
 
             {/*</Switch>*/}
-            {/*</HashRouter>*/}
         </div>
     );
 }
