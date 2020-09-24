@@ -3,6 +3,7 @@ import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 
 function HW10() {
     // useSelector, useDispatch
+    const loading = false;
 
     const setLoading = () => {
         // dispatch
@@ -16,9 +17,9 @@ function HW10() {
             homeworks 10
 
             {/*should work (должно работать)*/}
-            {false
+            {loading
                 ? (
-                    <div>loading...</div>
+                    <div>крутилка...</div>
                 ) : (
                     <div>
                         <SuperButton onClick={setLoading}>set loading...</SuperButton>
