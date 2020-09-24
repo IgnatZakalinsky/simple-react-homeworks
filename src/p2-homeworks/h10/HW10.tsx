@@ -29,7 +29,7 @@ function HW10() {
 
             <hr/>
             {/*для личного творчества, могу проверить*/}
-            {/*<AlternativeMessage/>*/}
+            {/*<Alternative/>*/}
             <hr/>
         </div>
     );
