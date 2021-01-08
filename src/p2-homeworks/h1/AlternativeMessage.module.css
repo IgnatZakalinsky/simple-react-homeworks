@@ -1,0 +1,8 @@
+.AlternativeMessage {
+    background: linear-gradient(to right, greenyellow, black);
+    font-style: italic;
+    color: greenyellow;
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
