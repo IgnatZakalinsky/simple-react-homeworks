@@ -1,3 +1,59 @@
 .message {
+    display: grid;
+    grid-template-rows: 80px;
+    grid-template-columns: 80px 300px;
+    border: 2px solid black;
+    grid-template-areas:
+     'avatar textArea';
+    width: 380px;
+    background-color: greenyellow;
+    border-radius: 10px;
+}
 
+.avatar {
+    grid-area: avatar;
+}
+
+.name {
+    grid-area: name;
+    margin: 5%;
+    color: blueviolet;
+}
+
+.info {
+    grid-area: info;
+    margin-left: 10%;
+    font-size: large;
+    color: honeydew;
+}
+
+.time {
+    grid-area: time;
+    color: green;
+    display: flex;
+    justify-content: flex-end;
+    align-self: end;
+    margin: 10px;
+}
+
+.textArea {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-template-rows: 40px 40px;
+    grid-template-areas:
+     'name name'
+     'info time';
+    grid-area: textArea;
+    background-color: black;
+    border-radius: 10px 10px 10px 0px;
+    width: 98%;
+    height: 95%;
+    margin: auto;
+}
+
+.message>img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    margin: 2px;
 }
