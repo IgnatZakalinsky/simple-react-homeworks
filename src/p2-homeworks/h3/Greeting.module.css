@@ -1,7 +1,25 @@
 .someClass {
-
 }
 
 .error {
-    border: 1px solid red;
+  border: 1px solid red;
+}
+
+.errorText {
+  color: red;
+  font-size: 0.7em;
+}
+
+.counter {
+  padding: 10px;
+  font-size: 0.8em;
+}
+
+.container {
+  height: 50px;
+}
+
+header {
+  font-size: 2em;
+  margin-bottom: 20px;
 }
