@@ -8,17 +8,17 @@ export type MessagePropsType = {
     time: string
 }
 
-const Message: React.FC<MessagePropsType> = ({avatar, name, message, time}) => {
+function Message(props: MessagePropsType) {
     return (
         <div className={s.message}>
-            <img src={avatar} alt={'avatar'} className={s.avatar}/>
+            <img src={props.avatar} alt={'avatar'} className={s.avatar}/>
 
             <div className={s.angle}/>
 
             <div className={s.content}>
-                <div className={s.name}>{name}</div>
-                <div className={s.text}>{message}</div>
-                <div className={s.time}>{time}</div>
+                <div className={s.name}>{props.name}</div>
+                <div className={s.text}>{props.message}</div>
+                <div className={s.time}>{props.time}</div>
             </div>
         </div>
     )
