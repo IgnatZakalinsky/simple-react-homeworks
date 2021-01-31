@@ -1,6 +1,6 @@
-import React from "react";
-import s from "./App.module.css";
-import HW1 from "../../../p2-homeworks/h1/HW1";
+import React from 'react'
+import s from './App.module.css'
+import HW1 from '../../../p2-homeworks/h1/HW1'
 
 function App() {
     return (
@@ -13,7 +13,7 @@ function App() {
             {/*<HW5/>*/}
 
         </div>
-    );
+    )
 }
 
-export default App;
+export default App
