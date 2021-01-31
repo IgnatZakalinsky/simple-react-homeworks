@@ -1,3 +1,10 @@
 .App {
+    min-height: 100vh;
 
+    color: #99ff99;
+    background-image: url("./cosmos.svg");
+}
+
+@media screen and (max-width: 600px) {
+    .App { background-size: 300% }
 }
