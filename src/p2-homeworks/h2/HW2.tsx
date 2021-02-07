@@ -23,6 +23,11 @@ const defaultAffairs: AffairType[] = [ // need to fix any
 export const filterAffairs = (affairs: AffairType[], filter: FilterType): AffairType[] => { // need to fix any
     if (filter === 'all') return affairs
     // else if (filter === 'low') return affairs.filter(a => a.priority === 'low')
+    // else if (filter === 'middle') return affairs.filter(a => a.priority === 'middle')
+    // else if (filter === 'high') return affairs.filter(a => a.priority === 'high')
+    // else {
+    //     return
+    // }
     else return affairs.filter(a => a.priority === filter)// need to fix
 }
 export const deleteAffair = (affairs: AffairType[], _id: number): AffairType[] => { // need to fix any
