@@ -53,10 +53,10 @@ function Affairs(props: AffairsPropsType) {
             <button onClick={setMiddle} className={cnMiddle}>Middle</button>
             <button onClick={setLow} className={cnLow}>Low</button>
 
-            <button onClick={set} className={setClass('all')} value={'all'}>All</button>
-            <button onClick={set} className={setClass('high')} value={'high'}>High</button>
-            <button onClick={set} className={setClass('middle')} value={'middle'}>Middle</button>
-            <button onClick={set} className={setClass('low')} value={'low'}>Low</button>
+            {/*<button onClick={set} className={setClass('all')} value={'all'}>All</button>*/}
+            {/*<button onClick={set} className={setClass('high')} value={'high'}>High</button>*/}
+            {/*<button onClick={set} className={setClass('middle')} value={'middle'}>Middle</button>*/}
+            {/*<button onClick={set} className={setClass('low')} value={'low'}>Low</button>*/}
         </div>
     )
 }
