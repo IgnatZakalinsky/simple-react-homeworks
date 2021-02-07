@@ -1,11 +1,11 @@
-import React from "react";
+import React from 'react'
 
 function AlternativeAffairs() {
     return (
         <div>
 
         </div>
-    );
+    )
 }
 
-export default AlternativeAffairs;
+export default AlternativeAffairs

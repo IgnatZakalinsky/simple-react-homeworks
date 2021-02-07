@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 type AffairPropsType = {
     // key не нужно типизировать
@@ -7,7 +7,7 @@ type AffairPropsType = {
 }
 
 function Affair(props: AffairPropsType) {
-    const deleteCallback = () => {};// need to fix
+    const deleteCallback = () => {}// need to fix
 
     return (
         <div>
@@ -15,7 +15,7 @@ function Affair(props: AffairPropsType) {
 
             <button onClick={deleteCallback}>X</button>
         </div>
-    );
+    )
 }
 
-export default Affair;
+export default Affair

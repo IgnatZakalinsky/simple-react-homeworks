@@ -1,6 +1,6 @@
-import React from "react";
-import Affair from "./Affair";
-import {AffairType} from "./HW2";
+import React from 'react'
+import Affair from './Affair'
+import {AffairType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
     data: any
@@ -17,10 +17,10 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => {}; // need to fix
-    const setHigh = () => {};
-    const setMiddle = () => {};
-    const setLow = () => {};
+    const setAll = () => {} // need to fix
+    const setHigh = () => {}
+    const setMiddle = () => {}
+    const setLow = () => {}
 
     return (
         <div>
@@ -32,7 +32,7 @@ function Affairs(props: AffairsPropsType) {
             <button onClick={setMiddle}>Middle</button>
             <button onClick={setLow}>Low</button>
         </div>
-    );
+    )
 }
 
-export default Affairs;
+export default Affairs
