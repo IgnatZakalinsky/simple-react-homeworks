@@ -1,5 +1,5 @@
-import React from "react";
-import s from "./Greeting.module.css";
+import React from 'react'
+import s from './Greeting.module.css'
 
 type GreetingPropsType = {
     name: any // need to fix any
@@ -13,7 +13,7 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
-    const inputClass = s.error; // need to fix with (?:)
+    const inputClass = s.error // need to fix with (?:)
 
     return (
         <div>
@@ -22,7 +22,7 @@ const Greeting: React.FC<GreetingPropsType> = (
             <button onClick={addUser}>add</button>
             <span>{totalUsers}</span>
         </div>
-    );
+    )
 }
 
-export default Greeting;
+export default Greeting

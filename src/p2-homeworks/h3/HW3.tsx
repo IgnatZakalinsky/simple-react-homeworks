@@ -1,5 +1,5 @@
-import React, {useState} from "react";
-import GreetingContainer from "./GreetingContainer";
+import React, {useState} from 'react'
+import GreetingContainer from './GreetingContainer'
 
 // types
 export type UserType = {
@@ -9,10 +9,10 @@ export type UserType = {
 
 // уровень работы с глобальными данными
 function HW3() {
-    const [users, setUsers] = useState<any>([]); // need to fix any
+    const [users, setUsers] = useState<any>([]) // need to fix any
 
     const addUserCallback = (name: any) => { // need to fix any
-        setUsers([]); // need to fix
+        setUsers([]) // need to fix
     }
 
     return (
@@ -28,7 +28,7 @@ function HW3() {
             {/*<AlternativeGreeting/>*/}
             <hr/>
         </div>
-    );
+    )
 }
 
-export default HW3;
+export default HW3
