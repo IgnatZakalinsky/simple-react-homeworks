@@ -1,7 +1,84 @@
-.default {
+@keyframes blink {
+    0% {
+        left: -130%;
+    }
+    100% {
+        left: 130%;
+    }
+}
 
+.default {
+    background: #003300;
+    color: #99ff99;
+    outline: none;
 }
 
 .red {
-    background: red;
+    background: #dd3355;
+}
+
+.button {
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button::after {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -130%;
+    top: 0;
+    height: 100%;
+    width: 20%;
+
+    transform: skew(45deg);
+
+    background-color: #ffffff;
+    opacity: 0.7;
+
+    z-index: 14;
+}
+
+.button:hover::after {
+    animation: blink 0.35s ease;
+}
+
+.button:hover::before {
+    display: block;
+    content: '';
+    position: absolute;
+
+    left: -100vw;
+    top: 0;
+    height: 100vh;
+    width: 300vw;
+
+    background-color: #ffffff;
+    opacity: 0.2;
+
+    z-index: 7;
+}
+
+.button:focus {
+    outline: #99ff99 solid 1px;
+}
+
+.button:active {
+    background: #99ff99;
+}
+
+.button:disabled {
+    color: #005500;
+    cursor: auto;
+}
+
+.button:disabled::after {
+    z-index: -1;
+}
+
+.button:disabled::before {
+    z-index: -1;
 }
