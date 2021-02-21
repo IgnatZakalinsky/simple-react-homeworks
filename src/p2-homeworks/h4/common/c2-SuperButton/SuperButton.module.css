@@ -43,7 +43,7 @@
 }
 
 .button:hover::after {
-    animation: blink 0.35s ease;
+    animation: blink 0.35s ease; /*https://html5book.ru/css3-animation/*/
 }
 
 .button:hover::before {
