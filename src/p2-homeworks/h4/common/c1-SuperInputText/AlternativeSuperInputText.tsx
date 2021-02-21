@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react'
 
 function AlternativeSuperInputText() {
     return (
         <input/>
-    );
+    )
 }
 
-export default AlternativeSuperInputText;
+export default AlternativeSuperInputText
