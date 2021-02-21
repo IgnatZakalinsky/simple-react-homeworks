@@ -23,6 +23,7 @@
     margin-right: 10px;
 
     background: #335533;
+    cursor: pointer;
 }
 
 .checkbox:checked {
