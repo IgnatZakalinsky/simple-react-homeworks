@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Error404() {
     return (
@@ -7,7 +7,7 @@ function Error404() {
             <div>Page not found!</div>
             <div>—ฅ/ᐠ.̫ .ᐟ\ฅ—</div>
         </div>
-    );
+    )
 }
 
-export default Error404;
+export default Error404

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function Header() {
     return (
@@ -6,7 +6,7 @@ function Header() {
             // add NavLinks
 
         </div>
-    );
+    )
 }
 
-export default Header;
+export default Header
