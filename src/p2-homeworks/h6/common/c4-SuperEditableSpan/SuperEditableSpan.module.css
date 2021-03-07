@@ -1,0 +1,9 @@
+.span {
+    display: inline-block;
+
+    height: 31px;
+    padding-top: 10px;
+
+    cursor: pointer;
+    color: #77aaff;
+}
