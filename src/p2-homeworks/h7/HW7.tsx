@@ -1,11 +1,11 @@
-import React, {useState} from "react";
-import SuperSelect from "./common/c5-SuperSelect/SuperSelect";
-import SuperRadio from "./common/c6-SuperRadio/SuperRadio";
+import React, {useState} from 'react'
+import SuperSelect from './common/c5-SuperSelect/SuperSelect'
+import SuperRadio from './common/c6-SuperRadio/SuperRadio'
 
-const arr = ["x", "y", "z"];
+const arr = ['x', 'y', 'z']
 
 function HW7() {
-    const [value, onChangeOption] = useState(arr[1]);
+    const [value, onChangeOption] = useState(arr[1])
 
     return (
         <div>
@@ -22,7 +22,7 @@ function HW7() {
             </div>
             <div>
                 <SuperRadio
-                    name={"radio"}
+                    name={'radio'}
                     options={arr}
                     value={value}
                     onChangeOption={onChangeOption}
@@ -35,7 +35,7 @@ function HW7() {
             {/*<AlternativeSuperRadio/>*/}
             <hr/>
         </div>
-    );
+    )
 }
 
-export default HW7;
+export default HW7
