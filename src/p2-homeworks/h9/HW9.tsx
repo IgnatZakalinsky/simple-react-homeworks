@@ -1,5 +1,5 @@
-import React from "react";
-import Clock from "./Clock";
+import React from 'react'
+import Clock from './Clock'
 
 function HW9() {
     return (
@@ -15,7 +15,7 @@ function HW9() {
             {/*<AlternativeClock/>*/}
             <hr/>
         </div>
-    );
+    )
 }
 
-export default HW9;
+export default HW9

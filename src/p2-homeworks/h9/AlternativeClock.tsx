@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 function AlternativeClock() {
 
@@ -7,7 +7,7 @@ function AlternativeClock() {
         <div>
 
         </div>
-    );
+    )
 }
 
-export default AlternativeClock;
+export default AlternativeClock
