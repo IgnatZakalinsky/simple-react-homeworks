@@ -1,3 +1,21 @@
 .range {
+    appearance: none;
+    width: 160px;
 
+    outline: none;
+    border-radius: 3px;
+    background: #99ff99;
+}
+
+.range::-webkit-slider-thumb {
+    appearance: none;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    top: 3px;
+    margin-top: -6px;
+
+    background: red;
+    cursor: pointer;
+    z-index: 2;
 }
