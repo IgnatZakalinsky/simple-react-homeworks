@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react'
 
 type SuperDoubleRangePropsType = {
     onChangeRange?: (value: [number, number]) => void
@@ -18,7 +18,7 @@ const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
         <>
             DoubleRange
         </>
-    );
+    )
 }
 
-export default SuperDoubleRange;
+export default SuperDoubleRange

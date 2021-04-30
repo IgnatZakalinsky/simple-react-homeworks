@@ -1,14 +1,14 @@
-import React from "react";
-import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
+import React from 'react'
+import SuperButton from '../h4/common/c2-SuperButton/SuperButton'
 
 function HW10() {
     // useSelector, useDispatch
-    const loading = false;
+    const loading = false
 
     const setLoading = () => {
         // dispatch
         // setTimeout
-        console.log("loading...");
+        console.log('loading...')
     };
 
     return (
@@ -32,7 +32,7 @@ function HW10() {
             {/*<Alternative/>*/}
             <hr/>
         </div>
-    );
+    )
 }
 
-export default HW10;
+export default HW10
