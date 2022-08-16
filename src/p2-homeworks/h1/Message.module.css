@@ -1,3 +1,78 @@
-.message {
+.wrapper {
+  /* max-width:1200px;
+  height: 600px; */
+  background-color: aqua;
+}
 
+.item {
+  position: relative;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  max-width: 200px;
+  height: 60px;
+  border: 0.5px Solid chartreuse;
+  background-color: chartreuse;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itemAvatar {
+  position: relative;
+  width: 35px;
+  height: 30px;
+}
+
+.itemImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.itemDialog{
+  position: relative;
+  width: 140px;
+  height: 50px;
+  background-color: grey;
+  opacity: .8;
+  border-radius: 5px 5px 5px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.itemName{
+  color: blueviolet;
+  padding-left: 15px;
+ 
+  /* padding-top: 5px; */
+font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 13px;
+}
+
+.itemPost{
+  color:rgb(219, 235, 203);
+  padding-left: 15px;
+  padding-top: 5px;
+  font-size: 11px;
+
+}
+
+.itemTime{
+  position: absolute;
+  right: 5px;
+  bottom: 2px;
+  font-size: .8rem;
+}
+
+.itemDialog::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 99%;
+  display: block;
+  width: 22px;
+  height: 30px;
+  background: radial-gradient(60px at top left, transparent 49%, grey 50%);
 }
