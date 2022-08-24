@@ -8,7 +8,7 @@ function Message(props: TMessageData) {
         <div className={s.wrapper}>
             <div className={s.item}>
                 <div className={s.itemAvatar} >
-                <img src ={props.avatar} className={s.itemImage} ></img>
+                <img src ={props.avatar} className={s.itemImage}  alt ={"img"}></img>
                 </div>
                 <div className={s.itemDialog}>
                     <div className={s.itemName}>

@@ -10,8 +10,7 @@
   margin-left: 1rem;
   max-width: 200px;
   height: 60px;
-  border: 0.5px Solid chartreuse;
-  background-color: chartreuse;
+  background-color: rgb(127, 255, 0, 0.5);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,8 +32,7 @@
   position: relative;
   width: 140px;
   height: 50px;
-  background-color: grey;
-  opacity: .8;
+  background-color: rgb(128, 128, 128);
   border-radius: 5px 5px 5px 0px;
   display: flex;
   flex-direction: column;
@@ -74,5 +72,5 @@ font-family:Georgia, 'Times New Roman', Times, serif;
   display: block;
   width: 22px;
   height: 30px;
-  background: radial-gradient(60px at top left, transparent 49%, grey 50%);
+  background: radial-gradient(60px at top left, transparent 49%, #808080 50%);
 }

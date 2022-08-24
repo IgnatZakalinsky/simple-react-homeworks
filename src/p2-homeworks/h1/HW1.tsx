@@ -8,7 +8,7 @@ export type TMessageData = {
     time: string
 }
 
-const messageData= {
+const messageData: TMessageData = {
     avatar: 'https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg',
     name: 'Anna',
     message: 'How are you?',
