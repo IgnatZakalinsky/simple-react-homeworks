@@ -12,13 +12,13 @@ function Affair(props: AffairPropsType) {
     const deleteCallback = () => {
         return props.deleteAffairCallback(props.id)
     }
-
+const priorityClass = s[props.priority]
     return (
         <div className={s.wrapper}>
             <span className={s.span}>{props.id }</span>
             <span>{props.affair}</span>
             {/* <span>{'  '}</span> */}
-            <span>{props.priority + " "}</span>
+            <span className={priorityClass}>{props.priority + " "}</span>
             <button className={s.button} onClick={deleteCallback}>X</button>
         </div>
     )

@@ -6,7 +6,9 @@ import s from "./Affairs.module.css"
 type AffairsPropsType = { // need to fix any
     data: AffairType[]
     setFilter: Dispatch<SetStateAction<FilterType>>
+    // setFilter:(filter: FilterType)=>void
     deleteAffairCallback: (_id: number) => void
+    filter:  FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -20,20 +22,29 @@ function Affairs(props: AffairsPropsType) {
         />
     ))
 
-    const setAll = () => { props.setFilter("all") } // need to fix
-    const setHigh = () => { props.setFilter("high") }
-    const setMiddle = () => { props.setFilter("middle") }
-    const setLow = () => { props.setFilter("low") }
+    // const setAll = () => { props.setFilter("all") } // need to fix
+    // const setHigh = () => { props.setFilter("high") }
+    // const setMiddle = () => { props.setFilter("middle") }
+    // const setLow = () => { props.setFilter("low") }
+
+
+    const onCLickHandler = (title: FilterType) => {
+        return () => props.setFilter(title)
+    }
+
+    const setClass = (filter:FilterType) => {
+        return s.filterButton + ' ' + (props.filter === filter ? ' ' + s.active : '')
+    }
 
     return (
         <div className={s.firstWrapper}>
 
             {mappedAffairs}
             <div className={s.buttonWrapper}>
-                <button className={s.filterButton } onClick={setAll}>All</button>
-                <button className={s.filterButton} onClick={setHigh}>High</button>
-                <button className={s.filterButton} onClick={setMiddle}>Middle</button>
-                <button className={s.filterButton} onClick={setLow}>Low</button>
+                <button className={setClass('all')} onClick={onCLickHandler('all')}>All</button>
+                <button className={setClass('high')} onClick={onCLickHandler('high')}>High</button>
+                <button className={setClass('middle')} onClick={onCLickHandler('middle')}>Middle</button>
+                <button className={setClass('low')} onClick={onCLickHandler('low')}>Low</button>
             </div>
         </div>
     )
