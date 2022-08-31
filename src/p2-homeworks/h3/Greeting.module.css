@@ -1,11 +1,47 @@
-.someClass {
-
-}
+.someClass {}
 
 .error {
     border: 1px solid red;
 }
 
-.wrapper{
+.wrapper {
     margin: 15px;
+    width: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+}
+
+.button {
+    margin-left: -15px;
+}
+.button:hover{
+opacity: .9;
+cursor: pointer;
+transform: scale(0.95);
+}
+
+.firstWrapper {
+    max-width: 450px;
+    height: 150px;
+    background: rgb(94, 178, 71);
+    display: flex;
+    justify-content: center;
+}
+
+.totalUsers{
+width: 15px;
+/* margin:auto; */
+border: 1px solid;
+text-align: center;
+background-color:beige;
+}
+.input{
+
+  background-color: aqua;  
+}
+
+.error{
+    border: 2px Solid red;
+    background-color: antiquewhite;
 }

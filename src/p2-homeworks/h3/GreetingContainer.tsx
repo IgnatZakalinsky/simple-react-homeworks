@@ -1,4 +1,4 @@
-import React, { ChangeEvent, useState } from 'react'
+import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
 import Greeting from './Greeting'
 
 type GreetingContainerPropsType = {
@@ -14,26 +14,36 @@ type GreetingContainerPropsType = {
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUserCallback }) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
     const [error, setError] = useState<string>('') // need to fix any
+    const errorMessage = 'Please add name'
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-
         let valueInput = e.currentTarget.value
-        let errorMessage = 'Please add name)'
 
         if (valueInput.length > 0) {
+
             setName(valueInput)
-            setError(' ')
+            setError('')
         } else {
-            setError(errorMessage)
-            setName(' ')
+            return
         }
     }
-
+   
     const addUser = () => {
+        if (name.length) {
+            alert(`Hello ${name}!`)
+            addUserCallback(name)
+        }
+        else {
+            setError(errorMessage)
+            alert(errorMessage)
+        }
+        setName('')// need to fix
+    }
 
-        addUserCallback(name)
-        alert(`Hello ${name}!`)
-        setName(' ')// need to fix
+    const onKeyDownTask = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter") {
+            addUser()
+        }
     }
 
     const totalUsers = users.length // need to fix
@@ -42,6 +52,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
         <Greeting
             name={name}
             setNameCallback={setNameCallback}
+            onKeyDownTask={onKeyDownTask}
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
