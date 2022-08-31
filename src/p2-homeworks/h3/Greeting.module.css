@@ -5,3 +5,7 @@
 .error {
     border: 1px solid red;
 }
+
+.wrapper{
+    margin: 15px;
+}
