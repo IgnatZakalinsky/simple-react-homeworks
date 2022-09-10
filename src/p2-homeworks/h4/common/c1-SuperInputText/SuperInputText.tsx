@@ -1,4 +1,4 @@
-import React, {ChangeEvent, DetailedHTMLProps, InputHTMLAttributes, KeyboardEvent} from 'react'
+import React, { ChangeEvent, DetailedHTMLProps, InputHTMLAttributes, KeyboardEvent, } from 'react'
 import s from './SuperInputText.module.css'
 
 // тип пропсов обычного инпута
@@ -11,6 +11,7 @@ type SuperInputTextPropsType = DefaultInputPropsType & { // и + ещё проп
     onEnter?: () => void
     error?: string
     spanClassName?: string
+    // onChange?:(e: ChangeEvent<HTMLInputElement>)=>void
 }
 
 const SuperInputText: React.FC<SuperInputTextPropsType> = (
@@ -25,25 +26,27 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
     }
 ) => {
     const onChangeCallback = (e: ChangeEvent<HTMLInputElement>) => {
-        onChange // если есть пропс onChange
-        && onChange(e) // то передать ему е (поскольку onChange не обязателен)
 
-        onChangeText && onChangeText(e.currentTarget.value)
+        onChange // если есть пропс onChange
+            && onChange(e) // то передать ему е (поскольку onChange не обязателен)
+        onChangeText && onChangeText(e.currentTarget.value) 
     }
+
     const onKeyPressCallback = (e: KeyboardEvent<HTMLInputElement>) => {
         onKeyPress && onKeyPress(e);
 
         onEnter // если есть пропс onEnter
-        && e.key === 'Enter' // и если нажата кнопка Enter
-        && onEnter() // то вызвать его
+            && e.key === 'Enter' // и если нажата кнопка Enter
+            && onEnter() // то вызвать его
     }
 
-    const finalSpanClassName = `${s.error} ${spanClassName ? spanClassName : ''}`
-    const finalInputClassName = `${s.errorInput} ${className}` // need to fix with (?:) and s.superInput
+    const finalSpanClassName = error ?  s.error + " " + s.span : s.span
+    const finalInputClassName = error ? `${s.errorInput} ${className ? className : " "}` 
+    : `${s.superInput} ${className ? className : " "}`// need to fix with (?:) and s.superInput
 
     return (
-        <>
-            <input
+        <div className={s.wrapperForInput}>
+            <input 
                 type={'text'}
                 onChange={onChangeCallback}
                 onKeyPress={onKeyPressCallback}
@@ -52,7 +55,7 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
                 {...restProps} // отдаём инпуту остальные пропсы если они есть (value например там внутри)
             />
             {error && <span className={finalSpanClassName}>{error}</span>}
-        </>
+        </div>
     )
 }
 

@@ -18,9 +18,13 @@ const Greeting: React.FC<GreetingPropsType> = (
     return (
         <div className={s.firstWrapper}>
             <div className={s.wrapper}>
-                <input placeholder={error} value={name} onChange={setNameCallback} onKeyDown={onKeyDownTask} className={inputClass} autoFocus={true} />
-                {/* <span>{error}</span> */}
-                <button onClick={addUser} className={s.button}>add</button>
+                <input placeholder={error}
+                    value={name} onBlur={setNameCallback}
+                    onChange={setNameCallback}
+                    onKeyDown={onKeyDownTask}
+                    className={inputClass} />
+                {/* <div>{error}</div> */}
+                <button onClick={addUser} className={s.button} >add</button>
                 <div className={s.totalUsers}>{totalUsers}</div>
             </div>
         </div>

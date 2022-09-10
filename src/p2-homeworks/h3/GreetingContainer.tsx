@@ -1,8 +1,9 @@
 import React, { ChangeEvent, KeyboardEvent, useState } from 'react'
 import Greeting from './Greeting'
+import { UserType } from './HW3'
 
 type GreetingContainerPropsType = {
-    users: Array<string> // need to fix any
+    users: Array<UserType> // need to fix any
     addUserCallback: (name: string) => void // need to fix any
 }
 
@@ -17,14 +18,12 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({ users, addUse
     const errorMessage = 'Please add name'
 
     const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
-        let valueInput = e.currentTarget.value
-
-        if (valueInput.length > 0) {
-
+        let valueInput = e.currentTarget.value.trim();
+        if (valueInput) {
             setName(valueInput)
-            setError('')
+            error && setError('')
         } else {
-            return
+            setError(errorMessage)
         }
     }
    

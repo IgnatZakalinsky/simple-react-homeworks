@@ -1,4 +1,4 @@
-.someClass {}
+/* .someClass {} */
 
 .error {
     border: 1px solid red;
@@ -15,10 +15,11 @@
 .button {
     margin-left: -15px;
 }
-.button:hover{
-opacity: .9;
-cursor: pointer;
-transform: scale(0.95);
+
+.button:hover {
+    opacity: .9;
+    cursor: pointer;
+    transform: scale(0.95);
 }
 
 .firstWrapper {
@@ -29,19 +30,23 @@ transform: scale(0.95);
     justify-content: center;
 }
 
-.totalUsers{
-width: 15px;
-/* margin:auto; */
-border: 1px solid;
-text-align: center;
-background-color:beige;
-}
-.input{
-
-  background-color: aqua;  
+.totalUsers {
+    width: 15px;
+    /* margin:auto; */
+    border: 1px solid;
+    text-align: center;
+    background-color: beige;
 }
 
-.error{
+.input {
+    background-color: aqua;
+}
+
+/* .input:focus {
+    /* outline: auto; */
+/* } */ 
+
+.error {
     border: 2px Solid red;
     background-color: antiquewhite;
 }

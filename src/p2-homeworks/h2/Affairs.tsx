@@ -8,7 +8,7 @@ type AffairsPropsType = { // need to fix any
     setFilter: Dispatch<SetStateAction<FilterType>>
     // setFilter:(filter: FilterType)=>void
     deleteAffairCallback: (_id: number) => void
-    filter:  FilterType
+    filter: FilterType
 }
 
 function Affairs(props: AffairsPropsType) {
@@ -32,13 +32,12 @@ function Affairs(props: AffairsPropsType) {
         return () => props.setFilter(title)
     }
 
-    const setClass = (filter:FilterType) => {
+    const setClass = (filter: FilterType) => {
         return s.filterButton + ' ' + (props.filter === filter ? ' ' + s.active : '')
     }
 
     return (
         <div className={s.firstWrapper}>
-
             {mappedAffairs}
             <div className={s.buttonWrapper}>
                 <button className={setClass('all')} onClick={onCLickHandler('all')}>All</button>

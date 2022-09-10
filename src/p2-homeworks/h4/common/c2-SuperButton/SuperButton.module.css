@@ -1,7 +1,25 @@
 .default {
+    background: green;
+}
 
+.default:disabled {
+    background: gray;
+    cursor: auto;
+    opacity: 1;
 }
 
 .red {
     background: red;
+}
+
+.button {
+    width: 4rem;
+    height: 1.5rem;
+    cursor: pointer;
+
+}
+
+.wrapperButton {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

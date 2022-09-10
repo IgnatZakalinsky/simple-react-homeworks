@@ -1,12 +1,23 @@
 .superInput {
-
+    width: 150px;
+    background: rgb(181, 174, 201);
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border: 2px solid black;
+    background: rgb(209, 132, 132);
 }
 
 .error {
     color: red;
+}
+
+.span {
+    display: inline-block;
+    height: 1.5rem;
+}
+
+.wrapperForInput{
+    display: flex;
+    flex-direction: column;
 }

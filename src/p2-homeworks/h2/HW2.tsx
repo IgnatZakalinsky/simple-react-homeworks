@@ -60,7 +60,6 @@ function HW2() {
                 deleteAffairCallback={deleteAffairCallback}
                 filter ={filter}
             />
-
             <hr />
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeAffairs/>*/}
