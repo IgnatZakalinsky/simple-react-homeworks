@@ -13,11 +13,12 @@
 }
 
 .span {
-    display: inline-block;
+    display: block;
     height: 1.5rem;
 }
 
-.wrapperForInput{
-    display: flex;
-    flex-direction: column;
+.wrapperForInput {
+    height: 50px;
+    height: 3rem;
+
 }
