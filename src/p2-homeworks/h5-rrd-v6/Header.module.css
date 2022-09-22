@@ -4,11 +4,11 @@
     width: 600px;
     align-items: center;
     transition: .5s;
-    left: -320px;
+    transform:translate(-320px) ;
 }
 
 .Active {
-    left: 0px;
+    transform:translate(0px)
 }
 
 .NavLink {
