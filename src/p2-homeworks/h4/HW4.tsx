@@ -20,7 +20,7 @@ function HW4() {
     const [checked, setChecked] = useState<boolean>(false)
 
     const testOnChange = (e: ChangeEvent<HTMLInputElement>) => {
-        return setChecked(e.currentTarget.checked)
+         setChecked(e.currentTarget.checked)
     }
 
     return (

@@ -42,8 +42,9 @@ const SuperInputText: React.FC<SuperInputTextPropsType> = (
 
     const finalSpanClassName = error ? s.error + " " + s.span : s.span
     const finalInputClassName = error ? `${s.errorInput} ${className ? className : " "}`
-        : `${s.superInput} ${className ? className : " "}`// need to fix with (?:) and s.superInput
-
+        : `${s.superInput} ${className ? className : " "}`
+        // need to fix with (?:) and s.superInput
+// console.log("nrp",restProps)
     return (<>
         <div className={s.wrapperForInput}>
             <input

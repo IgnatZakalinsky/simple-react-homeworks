@@ -24,6 +24,7 @@
 
 .NavLink:hover {
     transform: scale(1.09);
+    transform:translate(0px)
 }
 
 .OnOff {
