@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 15px;
+  width: 120px;
+  background-color: aqua;
+  font-size: 1.3rem;
+}
+.wrapperSelect{
+  width: 150px;
+}
+
+.wrapperRadio{
+  display:flex;
+  justify-content: space-around;
+}

@@ -1,0 +1,19 @@
+.wrapper {
+  margin: 15px;
+  width: 200px;
+  background-color: aqua;
+}
+
+.wrapperButton {
+  display: flex;
+
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+}
+
+/* .wrapperSpan {
+  margin: 15px;
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+} */
