@@ -21,7 +21,7 @@ function HW1() {
   return (
     <div className={styles.block}>
       <hr />
-      homeworks 1
+      homeworks 1.
       <Message
         avatar={messageData.avatar}
         name={messageData.name}
