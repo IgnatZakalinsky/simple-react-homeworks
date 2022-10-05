@@ -27,7 +27,7 @@ export const filterAffairs = (
   filter: FilterType
 ) => {
   // need to fix any
-  if (filter === "middle") {
+  if (filter === "middle") { 
     return affairs.filter((e) => e.priority === "middle");
   } else if (filter === "low") {
     return affairs.filter((e) => e.priority === "low");
