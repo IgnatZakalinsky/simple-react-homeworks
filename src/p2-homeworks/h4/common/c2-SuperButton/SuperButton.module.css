@@ -16,10 +16,13 @@
     width: 4rem;
     height: 1.5rem;
     cursor: pointer;
+    width: auto;
+    transition: .5;
 
 }
 
 .wrapperButton {
     margin-top: 10px;
     margin-bottom: 10px;
+    width: auto;
 }

@@ -1,0 +1,40 @@
+.table {
+  width: 250px;
+  border: 1px solid black;
+  margin: 0 10px;
+  background-color: aquamarine;
+}
+
+.td {
+  width: 30px;
+  border: 1px solid black;
+}
+
+.tdName {
+  width: 120px;
+  border: 1px solid black;
+}
+
+.tdAge {
+  width: 50px;
+  border: 1px solid black;
+}
+
+.buttonWrapper {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.button {
+  width: auto;
+  padding: 10px;
+}
+
+.buttonAllWrapper{
+  width: 260px;
+ display:flex;
+ justify-content: center;
+ 
+
+}
+

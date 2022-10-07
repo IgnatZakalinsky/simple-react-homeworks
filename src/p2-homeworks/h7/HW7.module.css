@@ -4,11 +4,37 @@
   background-color: aqua;
   font-size: 1.3rem;
 }
-.wrapperSelect{
+
+.wrapperSelect {
   width: 150px;
 }
 
-.wrapperRadio{
-  display:flex;
+.wrapperRadio {
+  display: flex;
   justify-content: space-around;
+}
+
+.inputRadio {
+  appearance: none;
+  width: 16px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgb(148, 231, 203);
+  border: 1px Solid rgb(108, 172, 150);
+  transition: .5;
+}
+
+.inputRadio:hover {
+  background-color: aqua;
+  cursor: pointer;
+}
+
+.inputRadio:checked {
+  background-color: rgb(33, 110, 110);
+  /* cursor: pointer; */
+}
+
+.inputRadio:focus {
+border: 2px Solid rgb(3, 95, 95);
+  /* cursor: pointer; */
 }
