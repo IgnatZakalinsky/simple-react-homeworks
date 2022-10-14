@@ -9,7 +9,7 @@ export type UserType = {
     age: number
 }
 
-const initialPeople:UserType[] = [
+const initialPeople: UserType[] = [
     { _id: 0, name: 'Кот', age: 3 },
     { _id: 1, name: 'Александр', age: 66 },
     { _id: 2, name: 'Коля', age: 16 },

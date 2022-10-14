@@ -9,6 +9,8 @@ box-shadow: 8px 3px 3px  darkcyan;
 }
 .wrapper.wrapperShow{
   background-color: rgb(204, 231, 121);
+  border: 2px solid rgb(136, 216, 161);
+  box-shadow: 8px 3px 3px  rgb(148, 193, 27);
 }
 .wrapperForOclockAndDate {
   width: 100px;
