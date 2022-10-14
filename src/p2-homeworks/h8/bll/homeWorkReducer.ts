@@ -13,39 +13,47 @@ export const homeWorkReducer = (
   switch (action.type) {
     case "sort": {
       const newState = [...state];
-      return newState.sort((a, b) => (a.name > b.name ? 1 : -1));
+      return newState.sort((a, b) => {
+        if (a.name > b.name) {
+          return 1;
+        } else if (a.name < b.name) {
+          return -1;
+        } else return 0;
+      });
     }
     case "sortDown": {
       const newState = [...state];
-      return newState.sort((a, b) => (a.name > b.name ? -1 : 1));
+      return newState.sort((a, b) => {
+        if (a.name > b.name) {
+          return -1;
+        } else if (a.name < b.name) {
+          return 1;
+        } else return 0;
+      });
     }
     case "check": {
-      return state.filter(item=>item.age>18)
+      return state.filter((item) => item.age > action.payload.age);
     }
     default:
       return state;
   }
 };
 
-export const sortUpAC = (up: string) => {
+export const sortUpAC = () => {
   return {
     type: "sort",
-    payload: {
-      up: up,
-    },
+    
   } as const;
 };
 
-export const sortDownAC = (down: string) => {
+export const sortDownAC = () => {
   return {
     type: "sortDown",
-    payload: {
-      down: down,
-    },
+    
   } as const;
 };
 
-export const sortForAgeAC = (age: string) => {
+export const sortForAgeAC = (age: number) => {
   return {
     type: "check",
     payload: {

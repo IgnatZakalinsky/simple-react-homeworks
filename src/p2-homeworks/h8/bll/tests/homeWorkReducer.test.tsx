@@ -15,23 +15,20 @@ beforeEach(() => {
 })
 
 test('sort name up', () => {
-    const newState = homeWorkReducer(initialState, sortUpAC("up"))
-
+    const newState = homeWorkReducer(initialState, sortUpAC())
     // console.log(newState)
     expect(newState[0].name).toBe("Александр")
     expect(newState[newState.length - 1].name).toBe("Кот")
 })
 test('sort name down', () => {
-    const newState = homeWorkReducer(initialState, sortDownAC("down"))
+    const newState = homeWorkReducer(initialState, sortDownAC())
     expect(newState[0].name).toBe('Кот')
 
 })
 
 test('check age 18', () => {
-
-    const newState = homeWorkReducer(initialState, sortForAgeAC("age"))
+    const newState = homeWorkReducer(initialState, sortForAgeAC(18))
     expect(newState[0].age > 18).toBe(true)
     expect(newState[newState.length - 1].age > 18).toBe(true)
-
-    console.log(newState[newState.length - 1].age)
+    // console.log(newState[newState.length - 1].age)
 })

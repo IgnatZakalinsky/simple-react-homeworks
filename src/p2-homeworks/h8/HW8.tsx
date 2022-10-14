@@ -9,7 +9,7 @@ export type UserType = {
     age: number
 }
 
-const initialPeople = [
+const initialPeople:UserType[] = [
     { _id: 0, name: 'Кот', age: 3 },
     { _id: 1, name: 'Александр', age: 66 },
     { _id: 2, name: 'Коля', age: 16 },
@@ -30,9 +30,9 @@ function HW8() {
     </>
     ))
 
-    const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC('up')));
-    const sortDown = () => setPeople(homeWorkReducer(initialPeople, sortDownAC('down')));
-    const sortForAge = () => setPeople(homeWorkReducer(initialPeople, sortForAgeAC("age")))
+    const sortUp = () => setPeople(homeWorkReducer(initialPeople, sortUpAC()));
+    const sortDown = () => setPeople(homeWorkReducer(initialPeople, sortDownAC()));
+    const sortForAge = () => setPeople(homeWorkReducer(initialPeople, sortForAgeAC(18)))
 
     return (
         <div className={s.wrapperHomeWork}>
