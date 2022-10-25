@@ -26,14 +26,13 @@ function Clock() {
     const onMouseLeave = () => {
         setShow(false)
     }
-    console.log(date)
     const stringTime = firstTime && date.toTimeString().slice(0,8)// fix with date
     const stringDate = date.toISOString().slice(0, 10)  // fix with date
 
     return (
         <div className={show ? s.wrapper + " " + s.wrapperShow :s.wrapper}>
            <div className={s.wrapperForOclockAndDate}>
-            <div className={s.wrapperForOclock}onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} >
+            <div className={s.wrapperForOclock} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave} >
                 {stringTime}
             </div>
 
