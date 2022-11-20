@@ -27,7 +27,7 @@ const SuperRange: React.FC<SuperRangePropsType> = (
     }
 
     const finalRangeClassName = `${s.range} ${className ? className : ''}`
-
+    console.log("restProps", restProps)
     return (
         <>
             <input

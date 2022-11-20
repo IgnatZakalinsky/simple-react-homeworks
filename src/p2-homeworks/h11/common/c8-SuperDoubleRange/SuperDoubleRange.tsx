@@ -14,7 +14,6 @@ export const SuperDoubleRange: React.FC<SuperDoubleRangePropsType> = (
     }
 ) => {
     console.log("rest", onChangeRange)
-    // сделать самому, можно подключать библиотеки
     const handleChange = (event: React.ChangeEvent<{}>, value: number | number[]) => {
         // setValue(newValue as number[]);
         Array.isArray(value) && onChangeRange && onChangeRange(value)
