@@ -1,3 +1,54 @@
 .range {
 
 }
+.span{
+    display: inline-block;
+    width: 15px;
+    margin-left: 10px;
+}
+.wrapper{
+    margin-left: 10px;
+}
+.inputRange{
+    overflow: hidden;
+    width: 160px;
+    margin-left: 10px;
+    -webkit-appearance: none;
+    background-color: #9a905d;
+}
+
+.inputRange::-webkit-slider-runnable-track {
+    height: 10px;
+    -webkit-appearance: none;
+    color: #13bba4;
+    margin-top: -1px;
+}
+
+.inputRange::-webkit-slider-thumb {
+    width: 10px;
+    -webkit-appearance: none;
+    height: 10px;
+    cursor: ew-resize;
+    background: #434343;
+    box-shadow: -80px 0 0 80px #43e5f7;
+}
+
+.inputRange::-moz-range-progress {
+    background-color: #43e5f7;
+}
+.inputRange::-moz-range-track {
+    background-color: #9a905d;
+}
+.inputRange::-ms-fill-lower {
+    background-color: #43e5f7;
+}
+.inputRange::-ms-fill-upper {
+    background-color: #9a905d;
+}
+
+.wrapperforDoubleRange{
+    margin-left: 10px;
+    display: flex;
+    width: 230px;
+    justify-content: space-between;
+}

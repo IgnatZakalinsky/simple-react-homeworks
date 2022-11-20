@@ -1,0 +1,34 @@
+.wrapper {
+  margin: 10px;
+  width: 100px;
+  border: 2px solid rgb(164, 164, 198);
+  border-radius: 5px;
+  background-color: aquamarine;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+box-shadow: 8px 3px 3px  darkcyan;
+}
+.wrapper.wrapperShow{
+  background-color: rgb(204, 231, 121);
+  border: 2px solid rgb(136, 216, 161);
+  box-shadow: 8px 3px 3px  rgb(148, 193, 27);
+}
+.wrapperForOclockAndDate {
+  width: 100px;
+  height: 30px;
+  /* margin: 5px ; */
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  
+}
+
+.wrapperForOclock {
+  margin: 0 auto;
+}
+
+.wrapperButton {
+  display: flex;
+  margin-top: 5px;
+  width: 100px;
+  justify-content: space-evenly;
+}

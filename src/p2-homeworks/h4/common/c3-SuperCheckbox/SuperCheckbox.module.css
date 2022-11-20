@@ -1,7 +1,15 @@
 .checkbox {
+width: 15px;
+margin: 5px;
+box-shadow:  0 5px 5px rgba(148, 115, 191, 0.2);
 
 }
 
 .spanClassName {
+color:blueviolet;
+}
+
+.label{
+  cursor: pointer;
 
 }

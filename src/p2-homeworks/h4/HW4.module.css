@@ -1,5 +1,6 @@
 .blue {
-    border-bottom: 5px solid blue;
+    width: 200px;
+    border-bottom: 2px solid blue;
 }
 
 .column {
@@ -9,5 +10,10 @@
 }
 
 .testSpanError {
-    color: blue;
+    color: red;
+}
+
+.checkboxBig{
+    transition: .9s;
+    cursor: pointer;
 }

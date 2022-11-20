@@ -1,3 +1,50 @@
-.someClass {
+.firstWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: aquamarine;
+  max-width: 450px;
+}
 
+.wrapper {
+  margin: 10px;
+  display: flex;
+  width: 250px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  font-size: 10px;
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.filterButton {
+  margin: 13px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.active {
+  opacity: 0.8;
+  transform: scale(1.15)
+}
+
+.low{
+  color: rgb(0, 149, 255);
+}
+
+.high{
+  color:brown
+}
+
+.middle{
+  color:chocolate
 }

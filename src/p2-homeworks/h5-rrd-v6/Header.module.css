@@ -1,0 +1,55 @@
+.WrapperNavLink {
+    position: relative;
+    display: flex;
+    width: 600px;
+    align-items: center;
+    transition: .5s;
+    transform:translate(-320px) ;
+}
+
+.Active {
+    transform:translate(0px)
+}
+
+.NavLink {
+    display: block;
+    margin: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.ActiveNavLink {
+    font-weight: bold;
+}
+
+.NavLink:hover {
+    transform: scale(1.09);
+    transform:translate(0px)
+}
+
+.OnOff {
+    /* width: 50px; */
+    padding: 3px;
+    border-radius: 15px;
+    border: 2px Solid rgb(111, 0, 255);
+    background-color: aquamarine;
+    text-align: center;
+}
+
+.OnOff:Hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.WrapperError {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: rgb(255, 189, 127);
+    border: 2px Solid red;
+}
